@@ -1,0 +1,337 @@
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV - Jérôme</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f2f2f2;
+      color: #333;
+      line-height: 1.5;
+    }
+
+    .cv {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 25px auto;
+      padding: 18mm;
+      background: #fff;
+    }
+
+    header {
+      border-bottom: 2px solid #333;
+      padding-bottom: 18px;
+      margin-bottom: 25px;
+    }
+
+    header h1 {
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: #222;
+    }
+
+    header h2 {
+      font-size: 17px;
+      font-weight: 400;
+      color: #666;
+      margin-top: 4px;
+    }
+
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      margin-top: 12px;
+      font-size: 13px;
+      color: #555;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 30% 1fr;
+      gap: 30px;
+    }
+
+    aside {
+      border-right: 1px solid #ddd;
+      padding-right: 20px;
+    }
+
+    main {
+      padding-left: 0;
+    }
+
+    section {
+      margin-bottom: 25px;
+    }
+
+    section h3 {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #222;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 7px;
+      margin-bottom: 12px;
+    }
+
+    p {
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
+
+    .profile {
+      font-size: 13.5px;
+      color: #555;
+      text-align: justify;
+    }
+
+    .skills {
+      list-style: none;
+    }
+
+    .skills li {
+      font-size: 13px;
+      margin-bottom: 7px;
+      color: #555;
+    }
+
+    .skills li::before {
+      content: "•";
+      margin-right: 8px;
+      color: #333;
+    }
+
+    .experience {
+      margin-bottom: 20px;
+    }
+
+    .experience h4 {
+      font-size: 15px;
+      color: #222;
+      margin-bottom: 2px;
+    }
+
+    .experience .company {
+      font-size: 13px;
+      color: #666;
+      font-weight: bold;
+    }
+
+    .experience .date {
+      font-size: 12px;
+      color: #888;
+      margin-bottom: 6px;
+    }
+
+    .experience p {
+      color: #555;
+    }
+
+    .education {
+      margin-bottom: 15px;
+    }
+
+    .education strong {
+      font-size: 13px;
+      color: #222;
+    }
+
+    .education span {
+      display: block;
+      font-size: 12px;
+      color: #777;
+    }
+
+    @media print {
+      body {
+        background: #fff;
+      }
+
+      .cv {
+        margin: 0;
+        width: 210mm;
+        min-height: 297mm;
+      }
+    }
+
+    @media screen and (max-width: 800px) {
+      .cv {
+        width: 100%;
+        min-height: auto;
+        margin: 0;
+        padding: 30px;
+      }
+
+      .layout {
+        grid-template-columns: 1fr;
+      }
+
+      aside {
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+        padding-right: 0;
+        padding-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="cv">
+
+    <header>
+      <h1>Jérôme</h1>
+      <h2>Rédacteur web & passionné du numérique</h2>
+
+      <div class="contact">
+        <span>📍 Paris, France</span>
+        <span>📞 +33 6 17 06 85 10</span>
+        <span>✉️ jerome@email.com</span>
+        <span>🌐 www.jeromeweb.com</span>
+      </div>
+    </header>
+
+    <div class="layout">
+
+      <aside>
+
+        <section>
+          <h3>Profil</h3>
+          <p class="profile">
+            Passionné par le numérique et les nouvelles technologies,
+            je suis rédacteur web spécialisé dans la création de contenus
+            clairs, utiles et accessibles. Curieux et constamment à l'affût
+            des innovations, je m'intéresse particulièrement à l'intelligence
+            artificielle, à l'Internet des objets et à la réalité virtuelle.
+          </p>
+        </section>
+
+        <section>
+          <h3>Compétences</h3>
+          <ul class="skills">
+            <li>Rédaction web</li>
+            <li>Création de contenus</li>
+            <li>SEO & référencement</li>
+            <li>Veille technologique</li>
+            <li>Intelligence artificielle</li>
+            <li>Internet des objets</li>
+            <li>Réalité virtuelle</li>
+            <li>WordPress</li>
+            <li>Réseaux sociaux</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Qualités</h3>
+          <ul class="skills">
+            <li>Curieux</li>
+            <li>Autonome</li>
+            <li>Créatif</li>
+            <li>Rigoureux</li>
+            <li>Esprit de synthèse</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Langues</h3>
+          <p><strong>Français</strong> — Courant</p>
+          <p><strong>Anglais</strong> — Professionnel</p>
+        </section>
+
+      </aside>
+
+      <main>
+
+        <section>
+          <h3>Expérience professionnelle</h3>
+
+          <div class="experience">
+            <h4>Rédacteur web</h4>
+            <div class="company"><a href="https://blogdunumerique.com">BDN</a> / Média</div>
+            <div class="date">2022 — Aujourd'hui</div>
+            <p>
+              Rédaction d'articles sur le numérique, les nouvelles technologies
+              et l'actualité web. Recherche d'informations, veille technologique,
+              optimisation SEO et adaptation des contenus aux différents publics.
+            </p>
+          </div>
+
+          <div class="experience">
+            <h4>Rédacteur web freelance</h4>
+            <div class="company">Indépendant</div>
+            <div class="date">2020 — 2022</div>
+            <p>
+              Création de contenus éditoriaux pour différents projets web.
+              Rédaction d'articles, guides, dossiers et contenus optimisés
+              pour les moteurs de recherche.
+            </p>
+          </div>
+
+        </section>
+
+        <section>
+          <h3>Centres d'intérêt</h3>
+
+          <div class="experience">
+            <h4>Technologies & innovation</h4>
+            <p>
+              Intelligence artificielle, objets connectés, réalité virtuelle,
+              cybersécurité, nouveaux usages numériques et transformation digitale.
+            </p>
+          </div>
+
+          <div class="experience">
+            <h4>Veille technologique</h4>
+            <p>
+              Suivi quotidien de l'actualité high-tech et des innovations
+              susceptibles de transformer nos usages numériques.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <h3>Formation</h3>
+
+          <div class="education">
+            <strong>Formation en communication / numérique</strong>
+            <span>SCEP — 2016</span>
+          </div>
+
+          <div class="education">
+            <strong>Formation complémentaire en rédaction web & SEO</strong>
+            <span>Formation en ligne — 2018</span>
+          </div>
+
+        </section>
+
+        <section>
+          <h3>Projet personnel</h3>
+          <p>
+            Développement d'une veille personnelle autour des innovations
+            technologiques et création de contenus destinés à vulgariser
+            les nouvelles technologies auprès du grand public.
+          </p>
+        </section>
+
+      </main>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
+```
